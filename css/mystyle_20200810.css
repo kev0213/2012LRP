@@ -1,0 +1,88 @@
+@charset "big5";
+/* CSS Document */
+
+.giftbg {
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+    position: relative;
+    margin: auto;
+    padding: auto;
+    background: no-repeat;
+    background-size: auto;
+	background-position: top;
+}
+.col {
+  float: left;
+  width: 11%;
+}
+.bg_green{
+	background-color: #4cc2b3;
+}
+.bg_bom1{
+	background-color: ;
+}
+.bg_bom1-1{
+}
+.bg_bom2{
+	background-color: #FFFFFF;
+}
+.bg_bom3{
+	background-color: #d1a49f;
+}
+
+	.img_box{width:100%;height:100%;}
+	.popo{width:100%;transition: all 0.3s;}
+	.popo:hover{transform: scale(0.940);}
+	
+	.wh{
+		width:100%;
+	}
+	.px180{
+		padding-left: 180px;
+		padding-right: 180px;
+		 }
+
+		
+		}
+	.nop{
+		  padding-left: 0px;padding-right: 0px;
+	  }
+	.pp{
+		padding: 1%;
+	}
+	.pp2{
+		padding: 1% 0%;
+	}
+	.pad0{
+		background:rgba(0,0,0,0.00)
+	} 
+	.pad15{
+	 	padding-right: 0px; 
+     	padding-left: 0px;
+	}
+	 @media (max-width: 767px) {
+		.px180{
+			padding-left: 0px;
+			padding-right: 0px;
+		 }
+
+		 .non{
+			display: none;
+		 }
+	  }
+		
+	@media (max-width: 1199px) {
+		 .non2{
+			display: none;
+		 }
+	  }
+
+
+
+
+.test col img{
+	
+	margin:0;
+}
