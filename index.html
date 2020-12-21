@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 	<base href="" id="base">
 	<script>
 		var hostURL = location.host.indexOf('pchomeec');
@@ -32,9 +30,9 @@
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
 	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="style/carrousel.css">
 	<link type="text/css" rel="stylesheet" href="css/title_20201201.css">
 	<link type="text/css" rel="stylesheet" href="css/reset_20191009.css">
-
 	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.1.0/addons/bootstrap/jquery.smartmenus.bootstrap.min.css">
@@ -48,6 +46,7 @@
 	<link type="text/css" rel="stylesheet" href="css/mystyle_20200810.css">
 
 	<!--JS-->
+	<script type="text/javascript" src="js/carrousel.js"></script>
 	<script type="text/javascript" src="js/jquery.min_20191009.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.smartmenus/1.1.0/jquery.smartmenus.min.js"></script>
@@ -403,58 +402,76 @@
 			</div>
 		</div>
 
-		<!------------ 輪播 BOX  ------------->
-		<div class="container mb-5">
-			<div class="row justify-content-center">
-				<div class="col">
-					<div id="LRPcarousel1218" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#LRPcarousel1218" data-slide-to="0" class="active mx-1"></li>
-							<li data-target="#LRPcarousel1218" data-slide-to="1" class="mx-1"></li>
-							<li data-target="#LRPcarousel1218" data-slide-to="2" class="mx-1"></li>
-							<li data-target="#LRPcarousel1218" data-slide-to="3" class="mx-1"></li>
-							<li data-target="#LRPcarousel1218" data-slide-to="4" class="mx-1"></li>
-							<li data-target="#LRPcarousel1218" data-slide-to="5" class="mx-1"></li>
-						</ol>
-
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B193Q" target="_blank">
-									<img src="images/BOX1.png" class="d-block w-100" alt=" "></a>
-							</div>
-							<div class="carousel-item">
-								<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B193N" target="_blank">
-									<img src="images/BOX2.png" class="d-block w-100" alt=" "></a>
-							</div>
-
-							<div class="carousel-item">
-								<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B194A" target="_blank">
-									<img src="images/BOX3.png" class="d-block w-100" alt=" "></a>
-							</div>
-
-							<div class="carousel-item">
-								<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B194E" target="_blank">
-									<img src="images/BOX4.png" class="d-block w-100" alt=" "></a>
-							</div>
-
-							<div class="carousel-item">
-								<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B194Z" target="_blank">
-									<img src="images/BOX5.png" class="d-block w-100" alt=" "></a>
-							</div>
-
-							<div class="carousel-item">
-								<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B1945" target="_blank">
-									<img src="images/BOX6.png" class="d-block w-100" alt="..."></a>
-							</div>
-						</div>
-
-					</div>
-				</div>
+		<!------------ 輪播 BOX PC ------------->
+		<div class="container for_pc" >
+		<div class="row " >
+		<div class="carrousel-main" data-setting='{"width":1200,"height":600	,
+	"carrouselWidth":1000,
+   	"carrouselHeight":600,
+   	"scale":0.9,
+   	"verticalAlign":"middle"}'style="margin-left:-600px; left:50%;" >
+		<div class="carrousel-btn carrousel-btn-pre"></div>
+		<ul class="carrousel-list">
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B193Q"><img src="images/BOX1.png"></a>
+			</li>
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B193N"><img src="images/BOX2.png"></a>
+			</li>
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B194A"><img src="images/BOX3.png"></a>
+			</li>
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B194E"><img src="images/BOX4.png"></a>
+			</li>
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B194Z"><img src="images/BOX5.png"></a>
+			</li>
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B1945"><img src="images/BOX6.png"></a>
+		</ul>
+		<div class="carrousel-btn carrousel-btn-next"></div>
+	</div>
+		</div>
+		</div>
+				<!------------ 輪播 BOX MB ------------->
+				<div class="container for_phone">
+			<div class="row">
+			<div class="carrousel-main" data-setting='{"width":760,"height":720	,
+	"carrouselWidth":560,
+   	"carrouselHeight":706,
+   	"scale":0.9,
+   	"verticalAlign":"middle"}'style="margin-left:-380px; left:50%;" >
+		<div class="carrousel-btn carrousel-btn-pre"></div>
+		<ul class="carrousel-list">
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B193Q"><img src="images/m_BOX1.png"></a>
+			</li>
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B193N"><img src="images/m_BOX2.png"></a>
+			</li>
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B194A"><img src="images/m_BOX3.png"></a>
+			</li>
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B194E"><img src="images/m_BOX4.png"></a>
+			</li>
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B194Z"><img src="images/m_BOX5.png"></a>
+			</li>
+			<li class="carrousel-item">
+				<a href="https://24h.pchome.com.tw/prod/DDCA2D-A900B1945"><img src="images/m_BOX6.png"></a>
+	
+		</ul>
+		<div class="carrousel-btn carrousel-btn-next"></div>
+	</div>
 			</div>
 		</div>
+
+
 		<!------------ 系列BN1 ------------->
 		
-		<div class="container" style="padding: 0% 0%">
+		<div class="container" style="padding: 2% 0%">
 			<div class="bg">
 				<img class="box-shadow" src="images/Bar2.jpg">
 				<img class="box-shadow" src="images/Bar2.jpg">
